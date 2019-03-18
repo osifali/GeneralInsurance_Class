@@ -48,17 +48,17 @@ plot(predict(chainladder(tri6)))
 # v prvom stlpci v trojuhollniku su velmi velke rozdiely medzi hodnotami
 # V trojuholniku pri ata su nezvycajne velke cisla v prvom stlpci
 
-# Porovnanie large a small pri 3rd Party: small ma kratke chvosty a large dlhe, 
+# Porovnanie large a small pri 3rd Party: obe skupiny maju kratke chvosty, 
 # Pri Large nam vybehne ciara pre 10, ine su v skupinke. 
 #To je kvoli tomu ze pri 10 je vysoke cislo ktore sa nam nasobi do konca
 # a pri ostatnych sa pri druhom nahle znizi co zjavne nebude dobry model pre 10
 
-## household ma kratke chvosty a 3d party ma dlhe, co je sposobene asi tym, ze
+## household ma pri oboch skupinach kratke chvosty a 3d party ma pri small dlhe, co je sposobene asi tym, ze
 # pri autach sa vyplacaju skody postupne pocas nasledujucich rokov, narozdiel od domov kde sa ked tak vyplacaju naraz,
 # napr. ked zhori dom 
 # pri poslednom to moze rok 2016 asi skreslovat, je tazko odhadnut ci su kratke alebo dlhe chvosty
 ## hlavny rozdiel medzi large a small je aspon u House mnozstvo penazi,
-#ale pri oboch mam zdanie ze pri large sa skor zacnu menej menit ako pri small
+#ale pri oboch mam zdanie, ze pri large skor nadobudnu hodnotu, pri ktorej sa menej menia, ako pri small
 
 
 ##Neviem ci bolo treba robit aj pre CASE, ale potom to vytvaralo chaos v kode
