@@ -97,3 +97,13 @@ summary(model3)
 # mozno treba skusit ine pravdepodobnostne rozdelenie alebo nejaku kombinaciu premennych s Construct_year
 # alebo transformacia dat v Construct_year, vypustenie outlierov, alebo celkovo iny model
 
+# skusime to este rozdelit na jednotlive roky,
+#kvoli spomienke na domacu ulohu 3, za ktoru som stratil kvoli tomu body :D
+#kedze to dava vsetko ako jednu spojitu premennu
+#(ale mozno je to v tomto pripade zle)
+model4 <- glm(data = dt_pol_w_claims %>% filter(Burning_Cost != 0, Burning_Cost < 100),
+              formula = Burning_Cost ~ as.factor(Construct_year),
+              family = Gamma())
+summary(model4)
+
+#ale stale to vychadza nesignifikatne,
