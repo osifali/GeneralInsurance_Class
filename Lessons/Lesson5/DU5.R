@@ -95,4 +95,5 @@ model3 <- glm(data = dt_pol_w_claims %>% filter(Burning_Cost != 0, Burning_Cost 
 summary(model3)
 # skusil som to pre data iba od 2005 ale ani to nie je signifikantne,
 # mozno treba skusit ine pravdepodobnostne rozdelenie alebo nejaku kombinaciu premennych s Construct_year
+# alebo transformacia dat v Construct_year
 
